@@ -1,0 +1,121 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: #1c1244 url("/img/stars.gif");
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #7C92E8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#header {
+    box-sizing: border-box;
+    margin-block: 8px;
+}
+
+#header a {
+    color: #fff;
+    margin-inline-end: 8px;
+}
+
+#home {
+    font-size: 1.85em;
+    font-weight: 700;
+    font-style: italic;
+    margin-inline-end: 12px !important;
+}
+
+#content {
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: #363A79;
+    color: #fff;
+}
+
+#content > div > *:first-child {
+    margin-top: 0;
+}
+
+#content > div > *:last-child {
+    margin-bottom: 0;
+}
+
+#content > div:not(.active) {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.loader {
+    text-align: center;
+    margin-block: 48px !important;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry:not(:last-child) {
+    border-bottom: 1px solid #7266BA;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.entry-title {
+    color: #fff;
+    font-size: 1.45em;
+}
+
+.entry-date {
+    font-size: .85em;
+    opacity: .5;
+}
+
+.page-title {
+    font-size: 2em;
+    margin-block-end: 8px;
+}
+
+.entry-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.entry-header .page-title {
+    margin-top: 0;
+    margin-inline-end: 8px;
+}
+
+#footer {
+    box-sizing: border-box;
+    margin-block: 16px;
+}
+
+@media (max-width: 900px) {
+    #header, #footer {
+        padding-inline: 16px;
+    }
+}
