@@ -65,8 +65,10 @@ async function buildEntryPage(entryId)
     for (const ent of entries)
     {
         if (ent.id == entryId)
+        {
             entry = ent;
             break;
+        }
     }
     if (!entry)
         return;
